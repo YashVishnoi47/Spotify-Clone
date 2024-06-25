@@ -1,53 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-
-
     <div class="main">
-
         <div class="left">
-
-
-            <div class="logo">
-                <img class="logo-img" src="assets/logo.svg" alt="">
-            </div>
-
-            
             <div class="home">
-                
-                <div class="home-btn"> 
-                     <img class="home-icon" src="assets/home.svg" alt="">
+                <div class="logo">
+                    <img class="logo-img" src="assets/logo.svg" alt="" />
+                </div>
+
+                <div class="home-btn">
+                    <img class="home-icon" src="assets/home.svg" alt="" />
                     <p>Home</p>
                 </div>
 
                 <div class="search-btn" class="red-border">
-                    <img src="assets/search.svg" alt="" class="search-icon">
+                    <img src="assets/search.svg" alt="" class="search-icon" />
                     <p>Search</p>
                 </div>
-
             </div>
-
 
             <div class="library">
                 <div class="lib-1">
-                    <img src="assets/lib.svg" alt="">
+                    <div class="lib-div-1">
+                        <img class="lib" src="assets/lib.svg" alt="" />
+                        <p>Your Library</p>
+                    </div>
+
+                    <div class="lib-div-2">
+                        <img class="plus" src="assets/plus.svg" alt="" />
+                        <img class="rightarrow" src="assets/rightarrow.svg" alt="" />
+                    </div>
                 </div>
             </div>
-            
         </div>
-    
-    
-    
-        <div class="right red-border"></div>
 
+        <div class="right">
+            <div class="navbar">
+                <div class="nav-left">
+                    <img src="assets/leftsign.svg" alt="" class="leftsign" />
+                    <img src="assets/rightsign.svg" alt="" class="rightsign" />
+                </div>
+
+                <div class="nav-right">
+                    <button class="premium-btn">Explore Premium</button>
+                    <button class="install-btn">
+                        <img src="assets/install.svg" alt="" class="install-img" />
+                        Install App
+                    </button>
+
+                    <!-- <button class="profile-btn">
+                            <img src="" alt="">
+                        </button>
+                     -->
+                </div>
+            </div>
+
+
+
+            <h2 class="sop-play">Spotify PlayList</h2>
+
+            <div class="card">
+                <div class="card-1">
+                    <div class="play-btn-div">
+                        <i class="fa-sharp fa-solid fa-play list-playbtn"></i>
+                    </div>
+
+                    <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt="" />
+                    <h5>Happy Hits</h5>
+                    <p>Hits To Boost your mood...</p>
+                </div>
+
+                <div class="card-1">
+                    <div class="play-btn-div">
+                        <i class="fa-sharp fa-solid fa-play list-playbtn"></i>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt="" />
+                    <h5>Happy Hits</h5>
+                    <p>Hits To Boost your mood...</p>
+                </div>
+
+            </div>
+
+            <div class="play-bar">
+                <div class="play-butns">
+                    <img src="assets/previous.svg" alt="" class="previous">
+                    <div>
+                        <img src="assets/play-pause.svg" alt="" class="play-pause">
+                    </div>
+                    <img src="assets/next.svg" alt="" class="next">
+                </div>
+            </div>
+
+
+
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
