@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box;  */
 }
 
 body{
@@ -10,6 +11,9 @@ body{
 
 .main{
     display: flex;
+    min-height: 100vh;
+    /* width: 100%; */
+
 }
 
 
@@ -17,13 +21,14 @@ body{
 
 
 .left{
-    width: 25vw;
-    height: 99vh;
+    width: 40vw;
+    height: auto;
     margin: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
     
+    /* overflow: visible; */
     /* border: 1px solid red; */
 }
 
@@ -87,14 +92,14 @@ body{
 .library{
     display: flex;
     flex-direction: column;
-    align-items:center ;
-    height:200px;
+    align-items:center;
+    height: auto;
     width: 95%;
     margin-top: 15px;
     background-color: #121212;
     border-radius: 8px;
     height: 70vh;
-
+    
     /* border: 1px solid white; */
 }
 
@@ -104,6 +109,7 @@ body{
     align-items: center;
     gap: 10px;
     transition: all ease 0.5s;
+    margin: 0 12px;
 
 }
 
@@ -118,11 +124,14 @@ body{
 
 .lib-1{
     width: 90%;
-    /* border: 1px solid white; */
     display: flex;
     margin-top: 8px;
     gap: 12px;
     justify-content: space-between;
+    color: white;
+
+    /* border: 1px solid white; */
+
 }
 
 .lib-1 .lib{
@@ -136,6 +145,72 @@ body{
 
 .plus, .rightarrow{
     height: 20px;
+}
+
+
+.songlist{
+    margin: 12px 33px;
+    color: white;
+
+}
+
+
+.songlist ul{
+    width: 100%;
+}
+
+.songlist ul li{
+    list-style-type: decimal;
+    width: 290px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+.songlist ul li:hover span{
+    opacity: 1;
+}
+
+
+
+.songinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.songinfo .song-name{
+    font-weight: 600;
+}
+
+.songinfo .song-artist{
+    font-size: 10px;
+}
+
+.songlist-li-songinfo{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.songlist span{
+    opacity: 0;
+    transition: all 0.2s ease;
+    display: flex;
+    gap: 8px;
+    scale: 1;
+}
+
+
+
+.songlist span:hover{
+    scale: 1.09;
 }
 
 /* left part of the site Ends Here */
@@ -344,7 +419,7 @@ body{
     bottom: 0;
     height: 100px;
     background-color: rgb(44, 63, 44);
-    width: 79.5%;
+    width: 71%;
     display: flex;
     justify-content: center;
     align-items: center;
