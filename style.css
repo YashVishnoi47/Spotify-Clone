@@ -7,6 +7,9 @@
 body{
     background-color: #000000;
     color: #B3B3B3;
+    width: 100%;
+    height: 100vh;
+    padding: 12px ;
 }
 
 .main{
@@ -21,7 +24,7 @@ body{
 
 
 .left{
-    width: 40vw;
+    width: 35%;
     height: auto;
     margin: 2px;
     display: flex;
@@ -55,7 +58,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #121212;
-    width: 95%;
+    width: 100%;
     margin-top: 12px;
     gap: 5px; 
     border-radius: 8px;
@@ -93,8 +96,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items:center;
-    height: auto;
-    width: 95%;
+    width: 100%;
+    min-height: 100vh;
     margin-top: 15px;
     background-color: #121212;
     border-radius: 8px;
@@ -222,7 +225,7 @@ body{
 /* Right part of the site Starts Here */
 
 .right{
-    width: 100%;
+    width: 65%;
     max-height: 95vh;
     margin: 2px;
     background-color: #121212;
@@ -417,12 +420,16 @@ body{
 .play-bar{
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 70px;
     background-color: rgb(44, 63, 44);
-    width: 71%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+
 }
 
 .play-butns{
