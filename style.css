@@ -1,20 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     /* box-sizing: border-box;  */
 }
 
-body{
+body {
     background-color: #000000;
     color: #B3B3B3;
     width: 100%;
     height: 100vh;
-    padding: 12px ;
+    /* padding: 4px ; */
 }
 
-.main{
+.main {
     display: flex;
     min-height: 100vh;
+    /* gap: ; */
     /* width: 100%; */
 
 }
@@ -23,20 +24,20 @@ body{
 /* left part of the site Starts Here */
 
 
-.left{
+.left {
     width: 35%;
     height: auto;
     margin: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     /* overflow: visible; */
     /* border: 1px solid red; */
 }
 
 
-.logo{
+.logo {
     width: 100%;
     height: 21px;
     display: flex;
@@ -44,7 +45,7 @@ body{
     padding: 12px;
 }
 
-.logo-img{
+.logo-img {
     display: block;
     margin: 2px;
     height: 25px;
@@ -54,21 +55,22 @@ body{
 
 
 
-.home{
+.home {
     display: flex;
     flex-direction: column;
     background-color: #121212;
     width: 100%;
     margin-top: 12px;
-    gap: 5px; 
+    gap: 5px;
     border-radius: 8px;
 }
 
 
-.home-btn, .search-btn{
+.home-btn,
+.search-btn {
     display: flex;
     height: 35px;
-    width: 90%; 
+    width: 90%;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
@@ -77,13 +79,17 @@ body{
 }
 
 
-.home-btn:hover , .search-btn:hover , .lib-div-1:hover , .lib-div-2:hover{
+.home-btn:hover,
+.search-btn:hover,
+.lib-div-1:hover,
+.lib-div-2:hover {
     color: white;
     cursor: pointer;
 }
 
 
-.home-icon, .search-icon{
+.home-icon,
+.search-icon {
     height: 25px;
     color: #B3B3B3;
 }
@@ -92,21 +98,21 @@ body{
 
 
 
-.library{
+.library {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     width: 100%;
     min-height: 100vh;
     margin-top: 15px;
     background-color: #121212;
     border-radius: 8px;
     height: 70vh;
-    
+
     /* border: 1px solid white; */
 }
 
-.lib-div-1{
+.lib-div-1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +122,7 @@ body{
 
 }
 
-.lib-div-2{
+.lib-div-2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +131,7 @@ body{
 }
 
 
-.lib-1{
+.lib-1 {
     width: 90%;
     display: flex;
     margin-top: 8px;
@@ -137,32 +143,34 @@ body{
 
 }
 
-.lib-1 .lib{
+.lib-1 .lib {
     height: 25px;
 }
 
 
-.lib-1 .plus{
+.lib-1 .plus {
     height: 20px;
 }
 
-.plus, .rightarrow{
+.plus,
+.rightarrow {
     height: 20px;
 }
 
 
-.songlist{
+.songlist {
     margin: 12px 33px;
     color: white;
 
 }
 
 
-.songlist ul{
+.songlist ul {
     width: 100%;
+    margin-top: 18px;
 }
 
-.songlist ul li{
+.songlist ul li {
     list-style-type: decimal;
     width: 290px;
     border: 1px solid white;
@@ -172,37 +180,37 @@ body{
     padding: 12px;
     cursor: pointer;
     border-radius: 8px;
-    
+
 }
 
-.songlist ul li:hover span{
+.songlist ul li:hover span {
     opacity: 1;
 }
 
 
 
-.songinfo{
+.songinfo {
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
-.songinfo .song-name{
+.songinfo .song-name {
     font-weight: 600;
 }
 
-.songinfo .song-artist{
+.songinfo .song-artist {
     font-size: 10px;
 }
 
-.songlist-li-songinfo{
+.songlist-li-songinfo {
     display: flex;
     gap: 12px;
     justify-content: center;
     align-items: center;
 }
 
-.songlist span{
+.songlist span {
     opacity: 0;
     transition: all 0.2s ease;
     display: flex;
@@ -212,7 +220,7 @@ body{
 
 
 
-.songlist span:hover{
+.songlist span:hover {
     scale: 1.09;
 }
 
@@ -224,9 +232,9 @@ body{
 
 /* Right part of the site Starts Here */
 
-.right{
+.right {
     width: 65%;
-    max-height: 95vh;
+    min-height: 100vh;
     margin: 2px;
     background-color: #121212;
     border-radius: 12px;
@@ -236,7 +244,7 @@ body{
 }
 
 
-.navbar{
+.navbar {
     height: 8vh;
     width: 98%;
     border-radius: 12px;
@@ -250,27 +258,27 @@ body{
     z-index: 99; */
 }
 
-.nav-left{
+.nav-left {
     display: flex;
     gap: 12px;
 }
 
 
-.nav-right{
+.nav-right {
     display: flex;
     gap: 12px;
     position: relative;
-    
-    
+
+
 }
 
-.nav-left img{
+.nav-left img {
     height: 15px;
     border-radius: 50%;
 }
 
 
-.premium-btn{
+.premium-btn {
     font-weight: 600;
     height: 35px;
     width: 135px;
@@ -279,7 +287,7 @@ body{
 }
 
 
-.install-btn{
+.install-btn {
     font-weight: 600;
     color: white;
     height: 35px;
@@ -290,7 +298,7 @@ body{
     scale: 1;
 }
 
-.install-img{
+.install-img {
     height: 15px;
     width: 15px;
 }
@@ -299,7 +307,8 @@ body{
 
 
 
-.install-btn:hover , .premium-btn:hover{
+.install-btn:hover,
+.premium-btn:hover {
     scale: 1.05;
     cursor: pointer;
 }
@@ -319,7 +328,7 @@ body{
 
 /* PlayList Starts Here */
 
-.card{
+.card {
     width: 95%;
     margin-top: 15px;
     color: white;
@@ -332,7 +341,7 @@ body{
     /* border: 1px solid white; */
 }
 
-.sop-play{
+.sop-play {
     margin: 18px;
     position: relative;
 
@@ -340,7 +349,7 @@ body{
 }
 
 
-.card-1{
+.card-1 {
     height: 240px;
     width: 170px;
     margin-top: 12px;
@@ -357,35 +366,35 @@ body{
 
 
 
-.card-1:hover{
+.card-1:hover {
     background-color: #171717;
 }
 
-.card-1:hover .play-btn-div{
+.card-1:hover .play-btn-div {
     opacity: 1;
     top: 105px;
 }
 
 
-.card-1 img{
+.card-1 img {
     height: 142px;
     width: 142px;
     border-radius: 8px;
 }
 
-.card-1 p{
+.card-1 p {
     margin-top: 8px;
 }
 
 
-.card-1 h5{
+.card-1 h5 {
     font-weight: 700;
     font-size: 15px;
     margin-top: 12px;
 }
 
 
-.play-btn-div{
+.play-btn-div {
     height: 40px;
     width: 40px;
     border: 1px solid green;
@@ -402,26 +411,26 @@ body{
     scale: 1;
 }
 
-.play-btn-div:hover{
+.play-btn-div:hover {
     scale: 1.1;
 }
 
 
 
-.list-playbtn{
+.list-playbtn {
     color: black;
-    
+
 }
 
 
 
 
 
-.play-bar{
+.play-bar {
     position: absolute;
     bottom: 0;
     height: 70px;
-    background-color: rgb(44, 63, 44);
+    background-color: rgba(0, 0, 0, 0.95);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -432,19 +441,19 @@ body{
 
 }
 
-.play-butns{
+.play-butns {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     width: 100%;
     gap: 12px;
 }
 
-.play-butns img{
-    height:  20px;
+.play-butns img {
+    height: 20px;
 }
 
-.play-butns div{
+.play-butns div {
     height: 30px;
     width: 30px;
     background-color: #fff;
@@ -457,14 +466,14 @@ body{
 }
 
 
-.play-butns div:hover{
+.play-butns div:hover {
     scale: 1.1;
 }
 
 
-.play-pause{
+.play-pause {
     border-radius: 25px;
     height: 2%;
     width: 30px;
-    
+
 }
