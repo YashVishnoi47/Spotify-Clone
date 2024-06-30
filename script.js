@@ -41,7 +41,7 @@ async function main(){
 
     }
 
-    var audio = new Audio(songs[0]); 
+    // var audio = new Audio(songs[0]); 
     // audio.play(); 
 }
  
